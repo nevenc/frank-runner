@@ -22,11 +22,22 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jms_1.1_spec</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.2.224</version>
+		</dependency>
+		<dependency>
 			<groupId>org.frankframework</groupId>
 			<artifactId>frankframework-webapp</artifactId>
 			<version>${ff.version}</version>
 			<type>war</type>
 		</dependency>
+		
 		<!--
 		Add core jar when custom code needs to be compiled (maven doesn't use jars in webapp to compile against).
 		Adding core jar can prevent double jars when you add other dependencies to this pom.xml that have dependencies
