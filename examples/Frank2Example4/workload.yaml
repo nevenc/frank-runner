@@ -10,7 +10,7 @@ metadata:
 spec:
   env:
     - name: JAVA_TOOL_OPTIONS
-      value: "-Dlog.dir=/tmp -Dinstance.name=Frank2Example4"
+      value: "-Dlog.dir=/tmp -Dinstance.name=Frank2Example4 -Ddtap.stage=LOC"
   build:
     env:
       - name: BP_JVM_VERSION
