@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frank2-example4
+  description: Frank!Runner - Example 4
+  tags:
+    - frankframework
+    - frankflow
+    - java
+    - spring
+    - integration
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=frank2-example4'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
